@@ -9,335 +9,380 @@
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 
-	<header>
-		<div class="header-container">
-			<img class="logo" src="assets/images/logo.png" alt="logo" />
-			<div class="header-menu-container">
-				<div class="header-buttons">
-					<a href="/" class="header-button button-primary"
-						>КУПИТЬ БИЛЕТЫ</a
-					>
-					<a href="/" class="header-button button-secondary">
-						ОРГАНИЗОВАТЬ ВЫСТАВКУ
-					</a>
-				</div>
-				<div class="header-menu">
-					<a href="/" class="menu-item">О МУЗЕЕ</a>
-					<a href="/" class="menu-item">ВЫСТАВКИ</a>
-					<a href="/" class="menu-item">ОБРАЗОВАНИЕ</a>
-					<a href="/" class="menu-item">КОНКУРСЫ И ФЕСТИВАЛИ</a>
-					<a href="/" class="menu-item">УСЛУГИ</a>
-					<a href="/" class="menu-item">КОНТАКТЫ</a>
-					<a href="/" class="menu-item">
-						<img
-							src="assets/images/search.svg"
-							width="21"
-							height="21"
-							alt="search"
-						/>
-					</a>
-				</div>
-			</div>
-		</div>
-	</header>
 	<body>
-		<div class="container">
-			<div class="intro">
-				<div class="intro-title-text">
-					<div class="druk-90 intro-text-1">ПУТЕШЕСТВУЙ</div>
-					<div class="antikva-150 intro-text-2">в историю</div>
-					<div class="druk-90 intro-text-3">ЧЕРЕЗ</div>
-					<div class="antikva-150 intro-text-4">объектив.</div>
-				</div>
-				<div class="intro-pic">
-					<img src="assets/images/intro-pic.png" alt="intro" />
-				</div>
-			</div>
-			<button class="button-primary intro-button">ХОЧУ ЭКСУРСИЮ</button>
-			<div class="intro-big-pic-container">
-				<div class="small-text-container">
-					<p class="pic-small-text">*актуально</p>
-					<p class="pic-small-text mt-20">выставка "многоэтажки"</p>
-					<p class="pic-small-text text-right">матвей лазарей</p>
-				</div>
+		<header id="header">
+			<div class="header-container">
 				<img
-					class="intro-big-pic mt-20"
-					src="assets/images/intro-big-pic.png"
-					alt="intro"
+					class="logo"
+					src="assets/images/logo.png"
+					alt="Логотип Музея"
 				/>
-			</div>
-
-			<div class="druk-60" style="grid-column: 1 / 7; margin-top: 160px">
-				ПЕРВЫЙ ФОТОГРАФИЧЕСКИЙ МУЗЕЙ
-			</div>
-			<div
-				class="antikva-40"
-				style="grid-column: 4 / 10; margin-top: 45px"
-			>
-				В РОССИИ, ПОСВЯЩЕННЫЙ ФОТОГРАФИИ, ИСТОРИИ, ЖИЗНИ И ТВОРЧЕСТВУ
-				ФОТОГРАФИИ
-			</div>
-			<div class="druk-60" style="grid-column: 7 / 13; margin-top: 45px">
-				А.О. КАРЕЛИНА <br />
-				И М.П. ДМИТРИЕВА.
-			</div>
-
-			<section class="about-museum grid">
-				<div class="small-text-container">
-					<p class="pic-small-text">20.04.2022</p>
-					<p style="text-wrap: nowrap" class="pic-small-text">
-						выставочный зал
-					</p>
+				<div class="header-menu-container">
+					<div class="header-buttons">
+						<a href="/buy_ticket" target="_blank" class="header-button button-primary">
+							КУПИТЬ БИЛЕТ
+						</a>
+						<a href="/organization" target="_blank" class="header-button button-secondary">
+							ОРГАНИЗОВАТЬ ВЫСТАВКУ
+						</a>
+					</div>
+					<ul class="header-menu">
+						<li class="menu-item"><a href="#about">О МУЗЕЕ</a></li>
+						<li class="menu-item"><a href="#exhibitions">ВЫСТАВКИ</a></li>
+						<li class="menu-item"><a href="/education" target="_blank">ОБРАЗОВАНИЕ</a></li>
+						<li class="menu-item">
+							<a href="#contests">КОНКУРСЫ И ФЕСТИВАЛИ</a>
+						</li>
+						<li class="menu-item"><a href="/services" target="_blank">УСЛУГИ</a></li>
+						<li class="menu-item"><a href="#footer">КОНТАКТЫ</a></li>
+						<li class="menu-item">
+							<a class="menu-item" href="/search" target="_blank">
+								<img
+									src="assets/images/search.svg"
+									width="21"
+									height="21"
+									alt="Поиск"
+								/>
+							</a>
+						</li>
+					</ul>
 				</div>
-				<div style="grid-column: 1 / 11" class="about-pic">
-					<img src="assets/images/about-pic.png" alt="" />
-				</div>
+			</div>
+		</header>
 
-				<button class="button-primary about-button mt-20">
-					О МУЗЕЕ
-				</button>
-
-				<div class="about-pic-2 mt-20">
-					<img src="assets/images/about-pic-2.png" alt="" />
-					<div class="small-text-container" style="align-self: end">
-						<p class="pic-small-text">выставка «веранда»</p>
-						<p class="pic-small-text text-right">
-							владимир соколов
-						</p>
+		<main>
+			<div class="container">
+				<div class="intro">
+					<div class="intro-title-text">
+						<h1 class="druk-90 intro-text-1">ПУТЕШЕСТВУЙ</h1>
+						<h1 class="antikva-150 intro-text-2">в историю</h1>
+						<h1 class="druk-90 intro-text-3">ЧЕРЕЗ</h1>
+						<h1 class="antikva-150 intro-text-4">объектив.</h1>
+					</div>
+					<div class="intro-pic">
+						<img src="assets/images/intro-pic.png" alt="Интро" />
 					</div>
 				</div>
+				<a href="/buy_ticket" target="_blank" class="button-primary intro-button">
+					ХОЧУ ЭКСУРСИЮ
+				</a>
+				<figure class="intro-big-pic-container">
+					<figcaption class="small-text-container">
+						<p class="pic-small-text">*актуально</p>
+						<p class="pic-small-text mt-20">
+							выставка "многоэтажки"
+						</p>
+						<p class="pic-small-text text-right">матвей лазарей</p>
+					</figcaption>
+					<img
+						class="intro-big-pic mt-20"
+						src="assets/images/intro-big-pic.png"
+						alt="Выставка 'многоэтажки'"
+					/>
+				</figure>
 
-				<div class="about-pic-3 mt-20">
-					<img src="assets/images/about-pic.png" alt="" />
-					<div class="small-text-container" style="align-self: end">
-						<p class="pic-small-text">выставочный зал</p>
-						<p
-							class="pic-small-text text-right"
-							style="margin-top: 5px"
+				<h2
+					class="druk-60"
+					style="grid-column: 1 / 7; margin-top: 160px"
+				>
+					ПЕРВЫЙ ФОТОГРАФИЧЕСКИЙ МУЗЕЙ
+				</h2>
+				<h2
+					class="antikva-40"
+					style="grid-column: 4 / 10; margin-top: 45px"
+				>
+					В РОССИИ, ПОСВЯЩЕННЫЙ ФОТОГРАФИИ, ИСТОРИИ, ЖИЗНИ И
+					ТВОРЧЕСТВУ ФОТОГРАФИИ
+				</h2>
+				<h2
+					class="druk-60"
+					style="grid-column: 7 / 13; margin-top: 45px"
+				>
+					А.О. КАРЕЛИНА <br />
+					И М.П. ДМИТРИЕВА.
+				</h2>
+
+				<section class="about-museum grid" id="about">
+					<div class="small-text-container">
+						<p class="pic-small-text">20.04.2022</p>
+						<p style="text-wrap: nowrap" class="pic-small-text">
+							выставочный зал
+						</p>
+					</div>
+					<div style="grid-column: 1 / 11" class="about-pic">
+						<img src="assets/images/about-pic.png" alt="Выставочный зал" />
+					</div>
+
+					<a href="/about_museum" class="button-primary about-button mt-20">
+						О МУЗЕЕ
+					</a>
+
+					<figure class="about-pic-2 mt-20">
+						<img src="assets/images/about-pic-2.png" alt="Выставка 'веранда'" />
+						<figcaption
+							class="small-text-container"
+							style="align-self: end"
 						>
-							20.04.2022
-						</p>
-					</div>
-				</div>
-			</section>
+							<p class="pic-small-text">выставка «веранда»</p>
+							<cite class="pic-small-text text-right">
+								владимир соколов
+							</cite>
+						</figcaption>
+					</figure>
 
-			<div class="now-title">
-				<div
-					class="antikva-150"
-					style="margin-right: 20px; text-align: end"
+					<figure class="about-pic-3 mt-20">
+						<img src="assets/images/about-pic.png" alt="Выставочный зал" />
+						<figcaption
+							class="small-text-container"
+							style="align-self: end"
+						>
+							<p class="pic-small-text">выставочный зал</p>
+							<p
+								class="pic-small-text text-right"
+								style="margin-top: 5px"
+							>
+								20.04.2022
+							</p>
+						</figcaption>
+					</figure>
+				</section>
+
+				<div class="now-title">
+					<h1
+						class="antikva-150"
+						style="margin-right: 20px; text-align: end"
+					>
+						сейчас
+					</h1>
+					<h2 class="druk-100">ВЫСТАВКИ</h2>
+				</div>
+				<section class="exhibitions grid" id="exhibitions">
+					<figure class="exhibition-1 exhibition-container">
+						<img src="assets/images/exhibition-1.png" alt="Выставка 'веранда'" />
+						<figcaption
+							class="small-text-container exhibition-text exhibition-1-text"
+						>
+							<p class="pic-small-text pic-small-text-num">(1)</p>
+							<p class="pic-small-text">выставка «веранда»</p>
+							<cite class="pic-small-text">владимир соколов</cite>
+						</figcaption>
+					</figure>
+
+					<figure class="exhibition-2 exhibition-container">
+						<img src="assets/images/exhibition-2.png" alt="" />
+						<figcaption
+							class="small-text-container exhibition-text exhibition-2-text"
+						>
+							<p class="pic-small-text pic-small-text-num">(2)</p>
+							<p class="pic-small-text">выставка «победа»</p>
+							<cite class="pic-small-text">владимир конников</cite>
+						</figcaption>
+					</figure>
+
+					<figure class="exhibition-3 exhibition-container">
+						<img src="assets/images/exhibition-3.png" alt="Выставка 'заключенная'" />
+						<figcaption
+							class="small-text-container exhibition-text exhibition-3-text"
+						>
+							<p class="pic-small-text pic-small-text-num">(3)</p>
+							<p class="pic-small-text">выставка «заключенная»</p>
+							<p class="pic-small-text">владислав иванов</p>
+						</figcaption>
+					</figure>
+
+					<figure class="exhibition-4 exhibition-container">
+						<img src="assets/images/exhibition-4.png" alt="Выставка 'степные волки'" />
+						<figcaption
+							class="small-text-container exhibition-text exhibition-4-text"
+						>
+							<p class="pic-small-text pic-small-text-num">(4)</p>
+							<p class="pic-small-text">
+								выставка «степные волки»
+							</p>
+							<p class="pic-small-text">анастасия прокопьева</p>
+						</figcaption>
+					</figure>
+
+					<figure class="exhibition-5 exhibition-container">
+						<img src="assets/images/exhibition-5.png" alt="Выставка 'сомнабулизм'" />
+						<figcaption
+							class="small-text-container exhibition-text exhibition-5-text"
+						>
+							<p class="pic-small-text pic-small-text-num">(5)</p>
+							<p class="pic-small-text">выставка «сомнабулизм»</p>
+							<p class="pic-small-text">виктория прусс</p>
+						</figcaption>
+					</figure>
+
+					<figure class="exhibition-6 exhibition-container">
+						<img src="assets/images/exhibition-6.png" alt="Выставка 'на следующей, пожалуйста'" />
+						<figcaption
+							class="small-text-container exhibition-text exhibition-5-text"
+						>
+							<p class="pic-small-text pic-small-text-num">(6)</p>
+							<p class="pic-small-text">
+								выставка «на следующей, пожалуйста»
+							</p>
+							<p class="pic-small-text">анастасия высоцкая</p>
+						</figcaption>
+					</figure>
+					<a class="view-all-button" href="/exhibitions" target="_blank"
+					>СМОТРЕТЬ ВСЕ ВЫСТАВКИ</a
 				>
-					сейчас
+				</section>
+
+				<div class="now-title">
+					<h1
+						class="antikva-150"
+						style="margin-right: 20px; text-align: end"
+					>
+						сейчас
+					</h1>
+					<h2 class="druk-100">КОНКУРСЫ</h2>
 				</div>
-				<div class="druk-100">ВЫСТАВКИ</div>
+				<section class="contests grid" id="contests">
+					<figure class="contest-1 contest-container">
+						<img src="assets/images/contest-1.png" alt="Выставка 'эдемский сад'" />
+						<figcaption
+							class="small-text-container contest-text contest-1-text"
+						>
+							<p class="pic-small-text pic-small-text-num">(1)</p>
+							<p class="pic-small-text">
+								выставка «эдемский сад»
+							</p>
+							<p class="pic-small-text">виктория зайцева</p>
+						</figcaption>
+					</figure>
+
+					<figure class="contest-2 contest-container">
+						<img src="assets/images/contest-2.png" alt="Выставка 'солнечные зайчики'" />
+						<figcaption
+							class="small-text-container contest-text contest-2-text"
+						>
+							<p class="pic-small-text pic-small-text-num">(2)</p>
+							<p class="pic-small-text">
+								выставка «солнечные зайчики»
+							</p>
+							<p class="pic-small-text">виктория погорелова</p>
+						</figcaption>
+					</figure>
+
+					<figure class="contest-3 contest-container">
+						<img src="assets/images/contest-3.png" alt="Выставка 'перформанс'" />
+						<figcaption
+							class="small-text-container contest-text contest-3-text"
+						>
+							<p class="pic-small-text pic-small-text-num">(3)</p>
+							<p class="pic-small-text">выставка «перформанс»</p>
+							<p class="pic-small-text text-right">
+								виктория погорелова
+							</p>
+						</figcaption>
+					</figure>
+
+					<figure class="contest-4 contest-container">
+						<img src="assets/images/contest-4.png" alt="Выставка 'яблочный сироп'" />
+						<figcaption
+							class="small-text-container contest-text contest-4-text"
+						>
+							<p class="pic-small-text pic-small-text-num">(4)</p>
+							<p class="pic-small-text">
+								выставка «яблочный сироп»
+							</p>
+							<p class="pic-small-text text-right">
+								виктория погорелова
+							</p>
+						</figcaption>
+					</figure>
+
+					<figure class="contest-5 contest-container">
+						<img src="assets/images/contest-5.png" alt="Выставка 'перформанс'" />
+						<figcaption
+							class="small-text-container contest-text contest-5-text"
+						>
+							<p class="pic-small-text pic-small-text-num">(5)</p>
+							<p class="pic-small-text">выставка «перформанс»</p>
+							<p class="pic-small-text text-right">
+								екатерина двойко
+							</p>
+						</figcaption>
+					</figure>
+					<a class="view-all-button" href="/contests" target="_blank"
+						>СМОТРЕТЬ ВСЕ КОНКУРСЫ</a
+					>
+				</section>
 			</div>
-			<section class="exhibitions grid">
-				<div class="exhibition-1 exhibition-container">
-					<img src="assets/images/exhibition-1.png" alt="" />
-					<div
-						class="small-text-container exhibition-text exhibition-1-text"
-					>
-						<p class="pic-small-text pic-small-text-num">(1)</p>
-						<p class="pic-small-text">выставка «веранда»</p>
-						<p class="pic-small-text">владимир соколов</p>
-					</div>
+		</main>
+
+		<footer id="footer">
+			<div class="footer-container grid druk-wide-trial">
+				<div class="footer-phones">
+					<a href="tel:+78314443456" class="footer-phone">+7 (831) 444 34 56</ф>
+					<a href="tel:+78314337443" class="footer-phone">+7 (831) 437 37 43</a>
 				</div>
 
-				<div class="exhibition-2 exhibition-container">
-					<img src="assets/images/exhibition-2.png" alt="" />
-					<div
-						class="small-text-container exhibition-text exhibition-2-text"
-					>
-						<p class="pic-small-text pic-small-text-num">(2)</p>
-						<p class="pic-small-text">выставка «победа»</p>
-						<p class="pic-small-text">владимир конников</p>
-					</div>
+				<address class="footer-address">
+					г. Нижний Новгород <br />ул. Пискунова, 9а
+				</address>
+
+				<div class="footer-ticket">
+					<a href="/buy_ticket" target="_blank">КУПИТЬ БИЛЕТ</a>
+					<a href="/pushkin_card" target="_blank">ПУШКИНСКАЯ КАРТА</a>
+				</div>
+			
+
+				<div class="links">
+					<a class="link" href="https://youtube.com/" target="_blank">
+						<p class="druk-wide-trial"
+							>YOUTUBE</p
+						>
+						<img src="assets/images/link.svg" alt="link" />
+					</a>
+					<a class="link"  href="https://t.me/" target="_blank">
+						<p class="druk-wide-trial"
+							>TELEGRAM</p
+							>
+							<img src="assets/images/link.svg" alt="link" />
+					</a>
+					<a class="link"  href="https://vk.com/" target="_blank">
+						<p class="druk-wide-trial"
+							>VKONTAKTE</p
+							>
+							<img src="assets/images/link.svg" alt="link" />
+					</a>
+					<a class="link" href="https://twitter.com/" target="_blank">
+						<p class="druk-wide-trial"
+							>TWITTER</p
+						>
+						<img src="assets/images/link.svg" alt="link" />
+					</a>
 				</div>
 
-				<div class="exhibition-3 exhibition-container">
-					<img src="assets/images/exhibition-3.png" alt="" />
-					<div
-						class="small-text-container exhibition-text exhibition-3-text"
-					>
-						<p class="pic-small-text pic-small-text-num">(3)</p>
-						<p class="pic-small-text">выставка «заключенная»</p>
-						<p class="pic-small-text">владислав иванов</p>
-					</div>
+				<div class="footer-menu">
+					<a class="druk-wide-trial" href="#about">О МУЗЕЕ</a>
+					<a class="druk-wide-trial" href="#exhibitions">ВЫСТАВКИ</a>
+					<a class="druk-wide-trial" href="#contests">КОНКУРСЫ</a>
+					<a class="druk-wide-trial" href="/photo-school" target="_blank">ФОТОШКОЛА</a>
 				</div>
 
-				<div class="exhibition-4 exhibition-container">
-					<img src="assets/images/exhibition-4.png" alt="" />
-					<div
-						class="small-text-container exhibition-text exhibition-4-text"
-					>
-						<p class="pic-small-text pic-small-text-num">(4)</p>
-						<p class="pic-small-text">выставка «степные волки»</p>
-						<p class="pic-small-text">анастасия прокопьева</p>
-					</div>
+				<a class="footer-title" href="#header">
+					<div class="footer-title-1">РУССКИЙ</div>
+					<div class="footer-title-2">МУЗЕЙ</div>
+					<div class="footer-title-3">ФОТОГРАФИИ</div>
+				</a>
+
+				<div class="footer-pic">
+					<img src="assets/images/footer-pic.png" alt="Логотип Музея" />
 				</div>
 
-				<div class="exhibition-5 exhibition-container">
-					<img src="assets/images/exhibition-5.png" alt="" />
-					<div
-						class="small-text-container exhibition-text exhibition-5-text"
-					>
-						<p class="pic-small-text pic-small-text-num">(5)</p>
-						<p class="pic-small-text">выставка «сомнабулизм»</p>
-						<p class="pic-small-text">виктория прусс</p>
+				<div class="footer-credits">
+					<div class="copyright">© 2023 Русский музей фотографии</div>
+					<div class="author">
+						<cite>Designer: @balakkalka</cite>
+						<div>HSE Art and Design school</div>
 					</div>
 				</div>
-
-				<div class="exhibition-6 exhibition-container">
-					<img src="assets/images/exhibition-6.png" alt="" />
-					<div
-						class="small-text-container exhibition-text exhibition-5-text"
-					>
-						<p class="pic-small-text pic-small-text-num">(6)</p>
-						<p class="pic-small-text">
-							выставка «на следующей, пожалуйста»
-						</p>
-						<p class="pic-small-text">анастасия высоцкая</p>
-					</div>
-				</div>
-			</section>
-
-			<div class="now-title">
-				<div
-					class="antikva-150"
-					style="margin-right: 20px; text-align: end"
-				>
-					сейчас
-				</div>
-				<div class="druk-100">КОНКУРСЫ</div>
 			</div>
-			<section class="contests grid">
-				<div class="contest-1 contest-container">
-					<img src="assets/images/contest-1.png" alt="" />
-					<div
-						class="small-text-container contest-text contest-1-text"
-					>
-						<p class="pic-small-text pic-small-text-num">(1)</p>
-						<p class="pic-small-text">выставка «эдемский сад»</p>
-						<p class="pic-small-text">виктория зайцева</p>
-					</div>
-				</div>
-
-				<div class="contest-2 contest-container">
-					<img src="assets/images/contest-2.png" alt="" />
-					<div
-						class="small-text-container contest-text contest-2-text"
-					>
-						<p class="pic-small-text pic-small-text-num">(2)</p>
-						<p class="pic-small-text">
-							выставка «солнечные зайчики»
-						</p>
-						<p class="pic-small-text">виктория погорелова</p>
-					</div>
-				</div>
-
-				<div class="contest-3 contest-container">
-					<img src="assets/images/contest-3.png" alt="" />
-					<div
-						class="small-text-container contest-text contest-3-text"
-					>
-						<p class="pic-small-text pic-small-text-num">(3)</p>
-						<p class="pic-small-text">выставка «перформанс»</p>
-						<p class="pic-small-text text-right">
-							виктория погорелова
-						</p>
-					</div>
-				</div>
-
-				<div class="contest-4 contest-container">
-					<img src="assets/images/contest-4.png" alt="" />
-					<div
-						class="small-text-container contest-text contest-4-text"
-					>
-						<p class="pic-small-text pic-small-text-num">(4)</p>
-						<p class="pic-small-text">выставка «яблочный сироп»</p>
-						<p class="pic-small-text text-right">
-							виктория погорелова
-						</p>
-					</div>
-				</div>
-
-				<div class="contest-5 contest-container">
-					<img src="assets/images/contest-5.png" alt="" />
-					<div
-						class="small-text-container contest-text contest-5-text"
-					>
-						<p class="pic-small-text pic-small-text-num">(5)</p>
-						<p class="pic-small-text">выставка «перформанс»</p>
-						<p class="pic-small-text text-right">
-							екатерина двойко
-						</p>
-					</div>
-				</div>
-				<a class="contests-button" href="/">СМОТРЕТЬ ВСЕ КОНКУРСЫ</a>
-			</section>
-		</div>
+		</footer>
 	</body>
-	<footer>
-		<div class="footer-container grid druk-wide-trial">
-			<div class="footer-phones">
-				<div class="footer-phone">+7 (831) 444 34 56</div>
-				<div class="footer-phone">+7 (831) 437 37 43</div>
-			</div>
-
-			<div class="footer-address">
-				г. Нижний Новгород <br />ул. Пискунова, 9а
-			</div>
-
-			<div class="footer-ticket">КУПИТЬ БИЛЕТ <br />ПУШКИНСКАЯ КАРТА</div>
-
-			<div class="links">
-				<div class="link">
-					<a class="druk-wide-trial" href="https://youtube.com/"
-						>YOUTUBE</a
-					>
-					<img src="assets/images/link.svg" alt="link" />
-				</div>
-				<div class="link">
-					<a class="druk-wide-trial" href="https://t.me/">TELEGRAM</a>
-					<img src="assets/images/link.svg" alt="link" />
-				</div>
-				<div class="link">
-					<a class="druk-wide-trial" href="https://vk.com/"
-						>VKONTAKTE</a
-					>
-					<img src="assets/images/link.svg" alt="link" />
-				</div>
-				<div class="link">
-					<a class="druk-wide-trial" href="https://twitter.com/"
-						>TWITTER</a
-					>
-					<img src="assets/images/link.svg" alt="link" />
-				</div>
-			</div>
-
-			<div class="footer-menu">
-				<a class="druk-wide-trial" href="/">О МУЗЕЕ</a>
-				<a class="druk-wide-trial" href="/">ВЫСТАВКИ</a>
-				<a class="druk-wide-trial" href="/">КОНКУРСЫ</a>
-				<a class="druk-wide-trial" href="/">ФОТОШКОЛА</a>
-			</div>
-
-			<div class="footer-title">
-				<div class="footer-title-1">РУССКИЙ</div>
-				<div class="footer-title-2">МУЗЕЙ</div>
-				<div class="footer-title-3">ФОТОГРАФИИ</div>
-			</div>
-
-			<div class="footer-pic">
-				<img src="assets/images/footer-pic.png" alt="footer" />
-			</div>
-
-			<div class="footer-credits">
-				<div class="copyright">© 2023 Русский музей фотографии</div>
-				<div class="author">
-					<div>Designer: @balakkalka</div>
-					<div>HSE Art and Design school</div>
-				</div>
-			</div>
-		</div>
-	</footer>
 </html>
